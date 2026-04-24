@@ -1,0 +1,87 @@
+/* Global CSS */
+:root {
+  --primary-color: #111111;
+  --primary-color-hover: #242424;
+  --secondary-color: #007aff;
+  --secondary-color-hover: #006be0;
+
+  --gray-1: #eeeeee;
+  --gray-2: #dddddd;
+  --gray-3: #cccccc;
+  --gray-4: #bbbbbb;
+  --gray-5: #9a9a9a;
+  --gray-6: #777777;
+
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "JetBrains Mono", monospace;
+}
+
+::-moz-selection {
+  color: white;
+  background: var(--secondary-color);
+}
+
+::selection {
+  color: white;
+  background: var(--secondary-color);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--primary-color);
+  font-family: var(--base-font);
+}
+
+a {
+  line-height: 0;
+  text-decoration: none;
+}
+
+a.link {
+  position: absolute;
+  inset: 0;
+  z-index: 99;
+}
+
+/* Buttons */
+
+.btn {
+  min-height: 2rem;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  border-radius: 0.25em;
+  outline: transparent;
+  border: 0;
+  font-family: var(--primary-font);
+  cursor: pointer;
+  position: relative;
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  color: white;
+  background-color: var(--primary-color);
+  stroke: red;
+
+  .icon {
+    font-size: 1rem;
+  }
+
+  &:hover {
+    background-color: var(--primary-color-hover);
+  }
+}
+
+/* ≤ 768px */
+@media (max-width: 48em) {
+  /*  */
+}
+
+/* ≤ 480px */
+@media (max-width: 30em) {
+  /*  */
+}
