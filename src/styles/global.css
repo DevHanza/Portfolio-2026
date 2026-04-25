@@ -43,10 +43,10 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+  letter-spacing: -3%;
 }
 
 a {
-  line-height: 0;
   text-decoration: none;
 }
 
@@ -61,6 +61,7 @@ a.link {
 .container {
   max-width: 48rem; /* 768px */
   margin: 0 auto;
+  padding-inline: 1.5em;
   /* background: var(--gray-1); */
 }
 
