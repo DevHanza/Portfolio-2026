@@ -65,6 +65,13 @@ a.link {
   /* background: var(--gray-1); */
 }
 
+/* ≤ 768px */
+@media (max-width: 48em) {
+  .container {
+    padding-inline: 1.25em;
+  }
+}
+
 /* Buttons */
 
 .btn {
@@ -94,6 +101,10 @@ a.link {
   &:hover {
     background-color: var(--primary-color-hover);
   }
+}
+
+/* ≤ 992px */
+@media (max-width: 62em) {
 }
 
 /* ≤ 768px */

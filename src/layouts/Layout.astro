@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import Header from "./Header.astro";
+import Footer from "./Footer.astro";
 ---
 
 <!doctype html>
@@ -18,13 +20,18 @@ import "../styles/global.css";
     />
 
     <!-- Icon Fonts -->
-
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://unpkg.com/lucide-static@1.9.0/font/lucide.css"
     />
   </head>
   <body>
+    <Header />
     <slot />
+    <Footer />
   </body>
 </html>
