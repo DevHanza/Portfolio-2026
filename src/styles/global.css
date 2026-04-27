@@ -56,6 +56,10 @@ a.link {
   z-index: 99;
 }
 
+section {
+  padding-bottom: 6.25em;
+}
+
 /* Container */
 
 .container {
