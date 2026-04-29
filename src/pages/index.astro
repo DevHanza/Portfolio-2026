@@ -1,13 +1,42 @@
 ---
+import Layout from "../layouts/Layout.astro";
 import "../styles/home.css";
 
-import Layout from "../layouts/Layout.astro";
+import hanza from "../assets/profile.jpg";
+import { Image } from "astro:assets";
 ---
 
 <Layout>
   <!-- Main Content -->
   <main>
     <!-- Hero Section -->
-    <section id="hero"></section>
+    <section id="hero">
+      <div class="container">
+        <div class="hero-image">
+          <Image src={hanza} height={180} width={180} alt={""} />
+        </div>
+        <div class="hero-content">
+          <div class="hero-heading">
+            <h1>Hansana Prabath</h1>
+
+            <span>
+              <p>Software Engineer</p>
+              <img
+                src={"./lk_flag.webp"}
+                height={16}
+                width={16}
+                alt="Flag of Sri Lanka"
+              />
+            </span>
+          </div>
+
+          <p class="hero-text">
+            A Self-taught developer from Sri Lanka. Since 2018, I have been
+            building web and software projects out of passion for both
+            open-source and commercial purposes.
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 </Layout>
