@@ -113,6 +113,9 @@ section {
 
 /* ≤ 768px */
 @media (max-width: 48em) {
+  section {
+    padding-bottom: 4em;
+  }
   /*  */
 }
 
