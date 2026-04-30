@@ -88,10 +88,35 @@
 
 /* Skills Section */
 #skills {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.75em;
+  }
+
   .skill-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: auto;
     gap: 1.5em;
+  }
+}
+
+/* ≤ 992px */
+@media (max-width: 62em) {
+}
+
+/* ≤ 768px */
+@media (max-width: 48em) {
+  #skills .skill-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25em 1.5em;
+  }
+}
+
+/* ≤ 480px */
+@media (max-width: 30em) {
+  #skills .skill-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
