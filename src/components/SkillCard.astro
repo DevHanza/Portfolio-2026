@@ -1,0 +1,47 @@
+---
+const {
+  title = "JavaScript",
+  icon = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+} = Astro.props;
+import Image from "astro/components/Image.astro";
+---
+
+<div class="skill-card">
+  <Image
+    src=`${icon}`
+    height={"20"}
+    width={"20"}
+    loading={"eager"}
+    alt={title}
+  />
+
+  <span>{title}</span>
+</div>
+
+<style>
+  .skill-card {
+    display: flex;
+    gap: 1.25em;
+    align-items: center;
+
+    span {
+      color: var(--primary-color);
+      font-size: 1.125rem;
+    }
+  }
+
+  /* ≤ 992px */
+  @media (max-width: 62em) {
+  }
+
+  /* ≤ 768px */
+  @media (max-width: 48em) {
+    .skill-card {
+      font-size: 1rem;
+    }
+  }
+
+  /* ≤ 480px */
+  @media (max-width: 30em) {
+  }
+</style>
