@@ -1,5 +1,7 @@
 ---
 import "../styles/header.css";
+import githubIcon from "../assets/logos/bxl-github.svg?raw";
+import linkedinIcon from "../assets/logos/bxl-linkedin.svg?raw";
 ---
 
 <!-- Header -->
@@ -11,13 +13,13 @@ import "../styles/header.css";
   <nav class="header-nav">
     <div class="header-nav-social">
       <a href="https://github.com/DevHanza/" aria-label="View GitHub profile">
-        <i class="bx bxl-github" aria-hidden="true"></i>
+        <i set:html={githubIcon} aria-hidden="true" />
       </a>
       <a
         href="https://linkedin.com/in/devhanza/"
         aria-label="View Linkedin profile"
       >
-        <i class="bx bxl-linkedin" aria-hidden="true"></i>
+        <i set:html={linkedinIcon} aria-hidden="true" />
       </a>
     </div>
 

@@ -1,5 +1,8 @@
 ---
 import "../styles/footer.css";
+import githubIcon from "../assets/logos/bxl-github.svg?raw";
+import linkedinIcon from "../assets/logos/bxl-linkedin.svg?raw";
+import envelopeIcon from "../assets/logos/bx-envelope.svg?raw";
 ---
 
 <!-- Footer -->
@@ -23,16 +26,16 @@ import "../styles/footer.css";
             href="https://github.com/DevHanza/"
             aria-label="View Github profile"
           >
-            <i class="bx bxl-github" aria-hidden="true"></i>
+            <i set:html={githubIcon} aria-hidden="true" />
           </a>
           <a
             href="https://linkedin.com/in/devhanza/"
             aria-label="View Linkedin profile"
           >
-            <i class="bx bxl-linkedin" aria-hidden="true"></i>
+            <i set:html={linkedinIcon} aria-hidden="true" />
           </a>
           <a href="mailto:devhanza@gmail.com" aria-label="Send an email.">
-            <i class="bx bx-envelope" aria-hidden="true"></i>
+            <i set:html={envelopeIcon} aria-hidden="true" />
           </a>
         </div>
       </div>
@@ -44,17 +47,17 @@ import "../styles/footer.css";
 
       <div class="footer-social">
         <a href="https://github.com/DevHanza/" aria-label="View Github profile">
-          <i class="bx bxl-github" aria-hidden="true"></i>
+          <i set:html={githubIcon} aria-hidden="true" />
           <!-- 20px -->
         </a>
         <a
           href="https://linkedin.com/in/devhanza/"
           aria-label="View Linkedin profile"
         >
-          <i class="bx bxl-linkedin" aria-hidden="true"></i>
+          <i set:html={linkedinIcon} aria-hidden="true" />
         </a>
         <a href="mailto:devhanza@gmail.com" aria-label="Send an email.">
-          <i class="bx bx-envelope" aria-hidden="true"></i>
+          <i set:html={envelopeIcon} aria-hidden="true" />
         </a>
       </div>
     </div>
