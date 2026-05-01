@@ -5,7 +5,7 @@
             "type": "Freelance",
             "date": "Mar 2025 - Oct 2025",
             "location": "Remote",
-            "image": "/public/logos/uom.png"
+            "image": "/logos/uom.png"
         },
         {
             "position": "G.C.E Advanced Level",
@@ -13,7 +13,7 @@
             "type": "Freelance",
             "date": "Mar 2025 - Oct 2025",
             "location": "Remote",
-            "image": "/public/logos/ncc.png"
+            "image": "/logos/ncc.png"
         },
         {
             "position": "English Language",
@@ -21,7 +21,7 @@
             "type": "Freelance",
             "date": "Mar 2025 - Oct 2025",
             "location": "Remote",
-            "image": "/public/logos/vta.png"
+            "image": "/logos/vta.png"
         },
         {
             "position": "G.C.E Ordinary Level",
@@ -29,6 +29,6 @@
             "type": "Freelance",
             "date": "Mar 2025 - Oct 2025",
             "location": "Remote",
-            "image": "/public/logos/srck.png"
+            "image": "/logos/srck.png"
         }
     ]
