@@ -1,0 +1,107 @@
+---
+import { Image } from "astro:assets";
+import logo from "./public/logos/logo.png";
+
+const {
+  position = "Web Developer",
+  workedAt = "Self Employed",
+  location = "Kandy, Sri Lanka",
+  date = "Mar 2025 - Oct 2025",
+  workType = "Freelance",
+  image = logo,
+} = Astro.props;
+---
+
+<div class="exp-card">
+  <div class="exp-card-left">
+    <Image class="exp-card-logo" src={image} alt={""} height={48} width={48} />
+    <div class="exp-card-title">
+      <p>{position}</p>
+      <span>{workedAt} · {workType} </span>
+    </div>
+  </div>
+
+  <div class="exp-card-right">
+    <div class="exp-card-info-item exp-date">
+      <i class="icon icon-calendar" aria-hidden="true"></i>
+      {date}
+    </div>
+    <span class="exp-card-info-item exp-location">
+      <i class="icon icon-map-pin" aria-hidden="true"></i>
+      {location}
+    </span>
+  </div>
+</div>
+
+<style>
+  .exp-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .exp-card .exp-card-left {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  .exp-card .exp-card-logo {
+    border-radius: 0.25em;
+  }
+
+  .exp-card .exp-card-title {
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--primary-color);
+      margin-bottom: 0.25em;
+    }
+
+    span {
+      font-size: 0.875rem;
+      color: var(--gray-6);
+    }
+  }
+
+  .exp-card .exp-card-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-size: 0.875rem;
+    color: var(--gray-6);
+    width: 11rem;
+
+    .exp-card-info-item i {
+      margin-top: 40px;
+      margin-right: 0.125em;
+    }
+  }
+
+  /* ≤ 992px */
+  @media (max-width: 62em) {
+  }
+
+  /* ≤ 768px */
+  @media (max-width: 48em) {
+  }
+
+  /* ≤ 480px */
+  @media (max-width: 30em) {
+    .exp-card {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .exp-card .exp-card-right {
+      flex-direction: row;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .exp-card .exp-card-right .exp-date {
+      margin-right: 1.5em;
+    }
+  }
+</style>
