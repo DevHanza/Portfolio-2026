@@ -137,3 +137,19 @@
     gap: 1.5em;
   }
 }
+
+/* Education Section */
+
+#education {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.75em;
+  }
+
+  .education-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+}

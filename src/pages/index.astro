@@ -9,6 +9,7 @@ import "../styles/home.css";
 import hanza from "../assets/profile.jpg";
 import skills from "../data/skills.json";
 import experience from "../data/experience.json";
+import education from "../data/education.json";
 ---
 
 <Layout>
@@ -75,6 +76,27 @@ import experience from "../data/experience.json";
         <div class="experience-cards">
           {
             experience.map((item) => (
+              <ExpCard
+                image={item.image}
+                position={item.position}
+                workedAt={item.workedAt}
+                location={item.location}
+                date={item.date}
+                workType={item.type}
+              />
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="education">
+      <div class="container">
+        <SectionHeading title="Education" text="Where I studied and learned." />
+        <div class="education-cards">
+          {
+            education.map((item) => (
               <ExpCard
                 image={item.image}
                 position={item.position}

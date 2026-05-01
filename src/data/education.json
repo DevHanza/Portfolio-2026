@@ -1,0 +1,34 @@
+    [
+        {
+            "position": "Trainee - Full Stack Developer",
+            "workedAt": "Univeristy of Moratuwa",
+            "type": "Freelance",
+            "date": "Mar 2025 - Oct 2025",
+            "location": "Remote",
+            "image": "/public/logos/uom.png"
+        },
+        {
+            "position": "G.C.E Advanced Level",
+            "workedAt": "Univeristy of Moratuwa",
+            "type": "Freelance",
+            "date": "Mar 2025 - Oct 2025",
+            "location": "Remote",
+            "image": "/public/logos/ncc.png"
+        },
+        {
+            "position": "English Language",
+            "workedAt": "Univeristy of Moratuwa",
+            "type": "Freelance",
+            "date": "Mar 2025 - Oct 2025",
+            "location": "Remote",
+            "image": "/public/logos/vta.png"
+        },
+        {
+            "position": "G.C.E Ordinary Level",
+            "workedAt": "Univeristy of Moratuwa",
+            "type": "Freelance",
+            "date": "Mar 2025 - Oct 2025",
+            "location": "Remote",
+            "image": "/public/logos/srck.png"
+        }
+    ]
