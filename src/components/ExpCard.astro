@@ -1,6 +1,4 @@
 ---
-import { Image } from "astro:assets";
-
 const {
   position = "Web Developer",
   workedAt = "Self Employed",
@@ -13,7 +11,13 @@ const {
 
 <div class="exp-card">
   <div class="exp-card-left">
-    <Image class="exp-card-logo" src={image} alt={""} height={48} width={48} />
+    <img
+      class="exp-card-logo"
+      src={image}
+      alt={`Logo of ${workedAt}`}
+      height={48}
+      width={48}
+    />
     <div class="exp-card-title">
       <p>{position}</p>
       <span>{workedAt} · {workType} </span>

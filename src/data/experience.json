@@ -5,7 +5,7 @@
             "type": "Freelance",
             "date": "Mar 2025 - Oct 2025",
             "location": "Kandy, Sri Lanka",
-            "image": "/logos/org.png"
+            "image": "./logos/org.png"
         },
         {
             "position": "Web Developer",
@@ -13,7 +13,7 @@
             "type": "Freelance",
             "date": "Mar 2025 - Oct 2025",
             "location": "Kandy, Sri Lanka",
-            "image": "/logos/avlanche.png"
+            "image": "./logos/avlanche.png"
         },
         {
             "position": "Frontend Developer",
@@ -21,6 +21,6 @@
             "type": "Freelance",
             "date": "Mar 2025 - Oct 2025",
             "location": "Kandy, Sri Lanka",
-            "image": "/logos/fiverr.png"
+            "image": "./logos/fiverr.png"
         }
     ]
