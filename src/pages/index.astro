@@ -3,10 +3,12 @@ import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import SectionHeading from "../components/SectionHeading.astro";
 import SkillCard from "../components/SkillCard.astro";
+import ExpCard from "../components/ExpCard.astro";
 
 import "../styles/home.css";
 import hanza from "../assets/profile.jpg";
 import skills from "../data/skills.json";
+import experience from "../data/experience.json";
 ---
 
 <Layout>
@@ -49,7 +51,6 @@ import skills from "../data/skills.json";
     </section>
 
     <!-- Skills Section -->
-
     <section id="skills">
       <div class="container">
         <SectionHeading
@@ -61,6 +62,27 @@ import skills from "../data/skills.json";
           {
             skills.map((item) => (
               <SkillCard title={item.title} icon={item.iconURL} />
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="container">
+        <SectionHeading title="Experience" text="My professional journey." />
+        <div class="experience-cards">
+          {
+            experience.map((item) => (
+              <ExpCard
+                image={item.image}
+                position={item.position}
+                workedAt={item.workedAt}
+                location={item.location}
+                date={item.date}
+                workType={item.type}
+              />
             ))
           }
         </div>

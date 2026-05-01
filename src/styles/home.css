@@ -87,6 +87,7 @@
 }
 
 /* Skills Section */
+
 #skills {
   .container {
     display: flex;
@@ -118,5 +119,21 @@
 @media (max-width: 30em) {
   #skills .skill-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Experience Section */
+
+#experience {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.75em;
+  }
+
+  .experience-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
   }
 }
