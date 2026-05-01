@@ -3,14 +3,14 @@
             "position": "Web Developer",
             "workedAt": "Self Employed",
             "type": "Freelance",
-            "date": "Mar 2025 - Oct 2025",
-            "location": "Kandy, Sri Lanka",
+            "date": "Oct 2025 - Present",
+            "location": "Remote",
             "image": "./logos/org.png"
         },
         {
             "position": "Web Developer",
             "workedAt": "Avlanche",
-            "type": "Freelance",
+            "type": "Full-time",
             "date": "Mar 2025 - Oct 2025",
             "location": "Kandy, Sri Lanka",
             "image": "./logos/avlanche.png"
@@ -19,7 +19,7 @@
             "position": "Frontend Developer",
             "workedAt": "Fiverr Freelancer",
             "type": "Freelance",
-            "date": "Mar 2025 - Oct 2025",
+            "date": "Jan 2024 - Mar 2025",
             "location": "Kandy, Sri Lanka",
             "image": "./logos/fiverr.png"
         }

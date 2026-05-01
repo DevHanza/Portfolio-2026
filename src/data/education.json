@@ -2,33 +2,33 @@
         {
             "position": "Trainee - Full Stack Developer",
             "workedAt": "Univeristy of Moratuwa",
-            "type": "Freelance",
-            "date": "Mar 2025 - Oct 2025",
+            "type": "Part-time",
+            "date": "May 2023 - May 2024",
             "location": "Remote",
             "image": "./logos/uom.png"
         },
         {
             "position": "G.C.E Advanced Level",
-            "workedAt": "Univeristy of Moratuwa",
-            "type": "Freelance",
-            "date": "Mar 2025 - Oct 2025",
-            "location": "Remote",
+            "workedAt": "Nugawela Central College",
+            "type": "Full-time",
+            "date": "Dec 2021 - Dec 2023",
+            "location": "Kandy, Sri Lanka",
             "image": "./logos/ncc.png"
         },
         {
             "position": "English Language",
-            "workedAt": "Univeristy of Moratuwa",
-            "type": "Freelance",
-            "date": "Mar 2025 - Oct 2025",
-            "location": "Remote",
+            "workedAt": "Vocational Training Authority",
+            "type": "Part-time",
+            "date": "Apr 2021 - Apr 2022",
+            "location": "Kandy, Sri Lanka",
             "image": "./logos/vta.png"
         },
         {
             "position": "G.C.E Ordinary Level",
-            "workedAt": "Univeristy of Moratuwa",
-            "type": "Freelance",
-            "date": "Mar 2025 - Oct 2025",
-            "location": "Remote",
+            "workedAt": "Sri Rahula College",
+            "type": "Full-time",
+            "date": "Jan 2010 - Jan 2021",
+            "location": "Kandy, Sri Lanka",
             "image": "./logos/srck.png"
         }
     ]
