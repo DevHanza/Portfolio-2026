@@ -1,0 +1,77 @@
+---
+import { Image } from "astro:assets";
+import cafesy from "../assets/ProjectThumbs/Cafesy.png";
+const {
+  image = cafesy,
+  title = "Cafesy  —  E-Commerce Website",
+  desc = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, minus.",
+  stack = ["JavaScript", "React", "Node.js", "JavaScript", "React", "Node.js"],
+} = Astro.props;
+---
+
+<div class="project-card">
+  <Image src={image} alt="Descriptive text" height={270} width={"370"} />
+  <h4>{title}</h4>
+  <p>{desc}</p>
+
+  <div class="project-stack">
+    {stack.map((item: string) => <span>{item}</span>)}
+  </div>
+</div>
+
+<style>
+  .project-card {
+    img {
+      width: 100%;
+      min-height: 17rem;
+      object-fit: cover;
+      border-radius: 0.5em;
+      margin-bottom: 1.5em;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 0.25em;
+    }
+
+    p {
+      font-size: 1rem;
+      color: var(--gray-6);
+      line-height: 1.5;
+    }
+
+    .project-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5em;
+      margin-top: 1em;
+      font-family: "JetBrains Mono", monospace;
+    }
+
+    .project-stack span {
+      color: var(--secondary-color);
+      background-color: rgba(0, 123, 255, 0.08);
+      font-size: 0.875rem;
+      /* margin-right: 0.5em; */
+      padding: 0.25em 0.5em;
+      border-radius: 0.25em;
+    }
+  }
+
+  /* ≤ 992px */
+  @media (max-width: 62em) {
+  }
+
+  /* ≤ 768px */
+  @media (max-width: 48em) {
+    .project-card h4 {
+      font-size: 1.125rem;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  /* ≤ 480px */
+  @media (max-width: 30em) {
+  }
+</style>
