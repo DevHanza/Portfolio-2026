@@ -1,14 +1,14 @@
 ---
-const { labels = [] } = Astro.props;
+const { labels = ["Tab 1", "Tab 2"] } = Astro.props;
 ---
 
 <div class="tabs">
   <nav class="tabs-nav">
     <!-- Exmaple: -->
 
-    <!-- <button data-tab="1" class="active">Personal Projects</button> -->
-    <!-- <button data-tab="2">Commercial Projects</button> -->
-    <!-- <button data-tab="3">Others</button> -->
+    <!-- <button data-tab="0" class="active">Personal Projects</button> -->
+    <!-- <button data-tab="1">Commercial Projects</button> -->
+    <!-- <button data-tab="2">Others</button> -->
 
     {
       labels.map((label, i) => {
@@ -24,9 +24,9 @@ const { labels = [] } = Astro.props;
     <slot />
     <!-- Exmaple: -->
 
-    <!-- <div data-tab-content="1" class="active">Tab 1</div>
-    <div data-tab-content="2">Tab 2</div>
-    <div data-tab-content="3">Tab 3</div> -->
+    <!-- <div data-tab-content="0" class="active">Tab 1</div>
+    <div data-tab-content="1">Tab 2</div>
+    <div data-tab-content="2">Tab 3</div> -->
   </div>
 </div>
 
@@ -60,7 +60,7 @@ const { labels = [] } = Astro.props;
     }
 
     .tabs-content {
-      [data-tab-content]:not(.active) {
+      div[data-tab-content]:not(.active) {
         display: none;
       }
     }
