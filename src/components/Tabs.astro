@@ -1,0 +1,107 @@
+---
+const { labels = [] } = Astro.props;
+---
+
+<div class="tabs">
+  <nav class="tabs-nav">
+    <!-- Exmaple: -->
+
+    <!-- <button data-tab="1" class="active">Personal Projects</button> -->
+    <!-- <button data-tab="2">Commercial Projects</button> -->
+    <!-- <button data-tab="3">Others</button> -->
+
+    {
+      labels.map((label, i) => {
+        return (
+          <button data-tab={i} class={i === 0 ? "active" : ""}>
+            {label}
+          </button>
+        );
+      })
+    }
+  </nav>
+  <div class="tabs-content">
+    <slot />
+    <!-- Exmaple: -->
+
+    <!-- <div data-tab-content="1" class="active">Tab 1</div>
+    <div data-tab-content="2">Tab 2</div>
+    <div data-tab-content="3">Tab 3</div> -->
+  </div>
+</div>
+
+<style>
+  .tabs {
+    .tabs-nav {
+      display: flex;
+      gap: 0.5em;
+      flex-wrap: wrap;
+      margin-bottom: 1.5em;
+
+      button {
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        min-height: 2.25rem;
+        padding: 0 0.75em;
+        cursor: pointer;
+        color: var(--primary-color);
+        background-color: white;
+        border-radius: 0.5em;
+        border: 1px solid var(--gray-3);
+        transition: all 0.1s ease-in-out;
+      }
+
+      & button.active,
+      & button:hover {
+        background-color: var(--primary-color);
+        color: white;
+        border-color: transparent;
+      }
+    }
+
+    .tabs-content {
+      [data-tab-content]:not(.active) {
+        display: none;
+      }
+    }
+  }
+
+  /* ≤ 992px */
+  @media (max-width: 62em) {
+  }
+
+  /* ≤ 768px */
+  @media (max-width: 48em) {
+  }
+
+  /* ≤ 480px */
+  @media (max-width: 30em) {
+  }
+</style>
+
+<script>
+  //
+  document.querySelectorAll(".tabs").forEach((section) => {
+    const buttons = section.querySelectorAll("[data-tab]");
+    const panels = section.querySelectorAll("[data-tab-content]");
+
+    buttons.forEach((button) => {
+      //
+      button.addEventListener("click", () => {
+        const id = button.dataset.tab;
+
+        // toggle buttons
+        buttons.forEach((b) => {
+          b.classList.toggle("active", b.dataset.tab === id);
+        });
+
+        // toggle panels
+        panels.forEach((p) => {
+          p.classList.toggle("active", p.dataset.tabContent === id);
+        });
+      });
+      //
+    });
+  });
+  //
+</script>
