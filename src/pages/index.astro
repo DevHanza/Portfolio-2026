@@ -4,6 +4,8 @@ import Layout from "../layouts/Layout.astro";
 import SectionHeading from "../components/SectionHeading.astro";
 import SkillCard from "../components/SkillCard.astro";
 import ExpCard from "../components/ExpCard.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import Tabs from "../components/Tabs.astro";
 
 import "../styles/home.css";
 import hanza from "../assets/profile.jpg";
@@ -69,6 +71,30 @@ import education from "../data/education.json";
       </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <SectionHeading
+          title="Projects"
+          text="Some things I've built and worked on."
+        />
+
+        <Tabs labels={["Personal", "Commercial"]}>
+          <div data-tab-content="0" class="project-cards-grid active">
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+          </div>
+
+          <div data-tab-content="1" class="project-cards-grid">
+            <ProjectCard />
+            <ProjectCard />
+          </div>
+        </Tabs>
+      </div>
+    </section>
+
     <!-- Experience Section -->
     <section id="experience">
       <div class="container">
@@ -90,7 +116,7 @@ import education from "../data/education.json";
       </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Education Section -->
     <section id="education">
       <div class="container">
         <SectionHeading title="Education" text="Where I studied and learned." />
