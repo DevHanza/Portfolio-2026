@@ -12,6 +12,7 @@ import hanza from "../assets/profile.jpg";
 import skills from "../data/skills.json";
 import experience from "../data/experience.json";
 import education from "../data/education.json";
+import projects from "../data/projects.json";
 ---
 
 <Layout>
@@ -80,16 +81,24 @@ import education from "../data/education.json";
         />
 
         <Tabs labels={["Personal", "Commercial"]}>
-          <div data-tab-content="0" class="project-cards-grid active">
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+          <div data-tab-content="0" class="active">
+            <div class="project-cards-grid">
+              {
+                projects.personal.map((p) => (
+                  <ProjectCard title={p.title} desc={p.desc} stack={p.stack} />
+                ))
+              }
+            </div>
           </div>
 
-          <div data-tab-content="1" class="project-cards-grid">
-            <ProjectCard />
-            <ProjectCard />
+          <div data-tab-content="1">
+            <div class="project-cards-grid">
+              {
+                projects.commercial.map((p) => (
+                  <ProjectCard title={p.title} desc={p.desc} stack={p.stack} />
+                ))
+              }
+            </div>
           </div>
         </Tabs>
       </div>
