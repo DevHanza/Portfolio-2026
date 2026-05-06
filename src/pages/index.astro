@@ -83,7 +83,13 @@ import flagLK from "../assets/lk_flag.png";
             <div class="project-cards-grid">
               {
                 projects.personal.map((p) => (
-                  <ProjectCard title={p.title} desc={p.desc} stack={p.stack} />
+                  <ProjectCard
+                    title={p.title}
+                    desc={p.desc}
+                    stack={p.stack}
+                    image={p.image}
+                    url={p.url}
+                  />
                 ))
               }
             </div>
