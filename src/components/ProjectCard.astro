@@ -6,14 +6,16 @@ const {
   title = "Cafesy  —  E-Commerce Website",
   desc = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, minus.",
   stack = ["JavaScript", "React", "Node.js", "JavaScript", "React", "Node.js"],
+  url = "https://github.com/DevHanza/",
 } = Astro.props;
 ---
 
 <div class="project-card">
-  <Image src={image} alt="Descriptive text" height={270} width={"370"} />
-  <h4>{title}</h4>
-  <p>{desc}</p>
-
+  <a href={url} target="_blank">
+    <Image src={image} alt="Descriptive text" height={270} width={"370"} />
+    <h4>{title}</h4>
+    <p>{desc}</p>
+  </a>
   <div class="project-stack">
     {stack.map((item: string) => <span>{item}</span>)}
   </div>
@@ -21,6 +23,8 @@ const {
 
 <style>
   .project-card {
+    position: relative;
+
     img {
       width: 100%;
       min-height: 17rem;
@@ -39,6 +43,10 @@ const {
       font-size: 1rem;
       color: var(--gray-6);
       line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
     }
 
     .project-stack {
