@@ -1,3 +1,7 @@
+import org from "../assets/exp-logos/org.png";
+import avlanche from "../assets/exp-logos/avlanche.png";
+import fiverr from "../assets/exp-logos/fiverr.png";
+
 export const experience = [
   {
     position: "Web Developer",
@@ -5,7 +9,7 @@ export const experience = [
     type: "Freelance",
     date: "Oct 2025 - Present",
     location: "Remote",
-    image: "./logos/org.png",
+    image: org,
   },
   {
     position: "Web Developer",
@@ -13,7 +17,7 @@ export const experience = [
     type: "Full-time",
     date: "Mar 2025 - Oct 2025",
     location: "Kandy, Sri Lanka",
-    image: "./logos/avlanche.png",
+    image: avlanche,
   },
   {
     position: "Frontend Developer",
@@ -21,6 +25,6 @@ export const experience = [
     type: "Freelance",
     date: "Jan 2024 - Mar 2025",
     location: "Kandy, Sri Lanka",
-    image: "./logos/fiverr.png",
+    image: fiverr,
   },
 ];

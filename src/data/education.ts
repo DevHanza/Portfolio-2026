@@ -1,3 +1,8 @@
+import uom from "../assets/exp-logos/uom.png";
+import ncc from "../assets/exp-logos/ncc.png";
+import vta from "../assets/exp-logos/vta.png";
+import srck from "../assets/exp-logos/srck.png";
+
 export const education = [
   {
     position: "Trainee - Full Stack Developer",
@@ -5,7 +10,7 @@ export const education = [
     type: "Part-time",
     date: "May 2023 - May 2024",
     location: "Remote",
-    image: "./logos/uom.png",
+    image: uom,
   },
   {
     position: "G.C.E Advanced Level",
@@ -13,7 +18,7 @@ export const education = [
     type: "Full-time",
     date: "Dec 2021 - Dec 2023",
     location: "Kandy, Sri Lanka",
-    image: "./logos/ncc.png",
+    image: ncc,
   },
   {
     position: "English Language",
@@ -21,7 +26,7 @@ export const education = [
     type: "Part-time",
     date: "Apr 2021 - Apr 2022",
     location: "Kandy, Sri Lanka",
-    image: "./logos/vta.png",
+    image: vta,
   },
   {
     position: "G.C.E Ordinary Level",
@@ -29,6 +34,6 @@ export const education = [
     type: "Full-time",
     date: "Jan 2010 - Jan 2021",
     location: "Kandy, Sri Lanka",
-    image: "./logos/srck.png",
+    image: srck,
   },
 ];
