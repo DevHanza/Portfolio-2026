@@ -8,11 +8,14 @@ import ProjectCard from "../components/ProjectCard.astro";
 import Tabs from "../components/Tabs.astro";
 
 import "../styles/home.css";
-import hanza from "../assets/profile.jpg";
+
 import { skills } from "../data/skills.ts";
 import { experience } from "../data/experience.ts";
 import { education } from "../data/education.ts";
 import { projects } from "../data/projects.ts";
+
+import hanza from "../assets/profile.jpg";
+import flagLK from "../assets/lk_flag.png";
 ---
 
 <Layout>
@@ -36,12 +39,7 @@ import { projects } from "../data/projects.ts";
 
             <span>
               <p>Software Engineer</p>
-              <img
-                src={"./lk_flag.webp"}
-                height={16}
-                width={16}
-                alt="Flag of Sri Lanka"
-              />
+              <Image src={flagLK} alt="Flag of Sri Lanka" loading={"eager"} />
             </span>
           </div>
 
