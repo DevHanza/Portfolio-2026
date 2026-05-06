@@ -1,0 +1,38 @@
+export const projects = {
+  personal: [
+    {
+      title: "Habitzy",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, minus.",
+      stack: ["React", "Node.js"],
+    },
+    {
+      title: "TelegramYTDLBot  —  Telegram Bot",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, minus.",
+      stack: ["Python"],
+    },
+    {
+      title: "SchoolNotes  —  MEAN-stack Application",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, minus.",
+      stack: ["Angular"],
+    },
+    {
+      title: "Cafesy  —  E-Commerce Website",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, minus.",
+      stack: ["Node.js"],
+    },
+  ],
+  commercial: [
+    {
+      title: "Hanzas  —  Web Agency Website",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, minus.",
+      stack: [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "JavaScript",
+        "React",
+        "Node.js",
+      ],
+    },
+  ],
+};
