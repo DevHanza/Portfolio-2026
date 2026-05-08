@@ -59,9 +59,36 @@ const { labels = ["Tab 1", "Tab 2"] } = Astro.props;
       }
     }
 
-    .tabs-content {
-      div[data-tab-content]:not(.active) {
+    /* .tabs-content {
+      [data-tab-content]:not(.active) {
         display: none;
+      }
+    } */
+
+    .tabs-content {
+      position: relative;
+
+      [data-tab-content] {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+
+        opacity: 0;
+        transform: translateY(2rem);
+        pointer-events: none;
+        visibility: hidden;
+
+        transition:
+          opacity 0.35s ease,
+          transform 0.35s ease;
+      }
+
+      [data-tab-content].active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+        visibility: visible;
+        position: relative;
       }
     }
   }
