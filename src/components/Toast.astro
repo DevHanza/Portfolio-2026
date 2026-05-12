@@ -1,0 +1,98 @@
+---
+const { message = "Message" } = Astro.props;
+---
+
+<div class="toast">
+  <div class="toast-wrapper">
+    <div class="toast-content">
+      <span class="status-icon">
+        <i class="icon-check" aria-hidden="true"></i>
+      </span>
+      <p>
+        {message}
+      </p>
+    </div>
+    <span class="close-btn">
+      <i class="icon-x"></i>
+    </span>
+  </div>
+</div>
+
+<style>
+  .toast {
+    .toast-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: fit-content;
+      min-width: 20rem;
+      margin: 0 auto;
+      padding: 0.5em;
+      font-size: 1rem;
+      background-color: white;
+      border: 1px solid var(--gray-1);
+      border-radius: 0.5em;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+
+      .close-btn {
+        padding: 0.125em;
+        border-radius: 0.25em;
+        line-height: 0;
+        color: var(--gray-3);
+
+        &:hover {
+          color: var(--gray-5);
+          /* background: var(--gray-1); */
+          cursor: pointer;
+        }
+      }
+
+      .close-btn i {
+        line-height: 1;
+      }
+    }
+
+    .toast-content {
+      display: flex;
+      align-items: center;
+      gap: 0.75em;
+
+      p {
+        display: inline-block;
+        margin: auto 0;
+        line-height: 1;
+      }
+
+      .status-icon {
+        display: inline-block;
+        padding: 0.25em;
+
+        align-content: center;
+        border-radius: 0.25em;
+        background-color: var(--secondary-color);
+        line-height: 0;
+      }
+      .status-icon i {
+        color: white;
+        font-size: 1.25em;
+        line-height: 1;
+      }
+    }
+  }
+
+  /* ≤ 992px */
+  @media (max-width: 62em) {
+  }
+
+  /* ≤ 768px */
+  @media (max-width: 48em) {
+  }
+
+  /* ≤ 480px */
+  @media (max-width: 30em) {
+    .toast .toast-wrapper {
+      font-size: 0.875rem;
+      min-width: 15rem;
+    }
+  }
+</style>
