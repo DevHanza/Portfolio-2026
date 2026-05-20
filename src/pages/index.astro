@@ -82,15 +82,17 @@ import flagLK from "../assets/lk_flag.png";
           <div data-tab-content="0" class="active">
             <div class="project-cards-grid">
               {
-                projects.personal.map((p) => (
-                  <ProjectCard
-                    title={p.title}
-                    desc={p.desc}
-                    stack={p.stack}
-                    image={p.image}
-                    url={p.url}
-                  />
-                ))
+                projects.personal
+                  .slice(0, 2)
+                  .map((p) => (
+                    <ProjectCard
+                      title={p.title}
+                      desc={p.desc}
+                      stack={p.stack}
+                      image={p.image}
+                      url={p.url}
+                    />
+                  ))
               }
             </div>
             <a href="https://github.com/DevHanza/" target="_blank">
@@ -103,9 +105,15 @@ import flagLK from "../assets/lk_flag.png";
           <div data-tab-content="1">
             <div class="project-cards-grid">
               {
-                projects.commercial.map((p) => (
-                  <ProjectCard title={p.title} desc={p.desc} stack={p.stack} />
-                ))
+                projects.commercial
+                  .slice(0, 4)
+                  .map((p) => (
+                    <ProjectCard
+                      title={p.title}
+                      desc={p.desc}
+                      stack={p.stack}
+                    />
+                  ))
               }
             </div>
             <a href="/commercial-projects" target="_blank">
