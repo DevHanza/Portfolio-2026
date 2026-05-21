@@ -72,7 +72,7 @@ export const projects = {
   commercial: [
     {
       title: "Skippz.com",
-      desc: "Website for a video hosting platform for creators, educators, and teams.",
+      desc: "Website for a video hosting platform company built for creators, educators, and teams.",
       image: skippz,
       url: "https://skippz.com/",
     },
