@@ -1,0 +1,18 @@
+.archive-hero {
+  padding: 5em 0;
+}
+
+/* ≤ 992px */
+@media (max-width: 62em) {
+}
+
+/* ≤ 768px */
+@media (max-width: 48em) {
+  .archive-hero {
+    padding: 3em 0;
+  }
+}
+
+/* ≤ 480px */
+@media (max-width: 30em) {
+}

@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ArchiveHeading from "../components/ArchiveHeading.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import "../styles/archive.css";
+
+import { projects } from "../data/projects.ts";
+---
+
+<Layout>
+  <section class="archive-hero">
+    <div class="container">
+      <ArchiveHeading
+        title="Commercial Projects"
+        text="Projects I've built and contributed to for companies and clients.
+Not just ideas — real products in use."
+      />
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="project-cards-grid">
+        {
+          projects.commercial.map((p) => (
+            <ProjectCard
+              title={p.title}
+              desc={p.desc}
+              stack={p.stack}
+              image={p.image}
+              url={p.url}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Layout>
