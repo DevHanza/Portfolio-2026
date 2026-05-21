@@ -11,6 +11,7 @@ import solviaInc from "../assets/ProjectThumbs/SolviaInc.png";
 import danuAlp from "../assets/ProjectThumbs/DanuALP.png";
 import motiveOps from "../assets/ProjectThumbs/MotiveOps.png";
 import shineCleaning from "../assets/ProjectThumbs/ShineCleaning.png";
+import glitzfairry from "../assets/ProjectThumbs/Glitzfairry.png";
 
 export const projects = {
   personal: [
@@ -93,13 +94,7 @@ export const projects = {
       title: "Solviainc.com",
       desc: "Website for a US-based company specializing in patient recruitment solutions.",
       image: solviaInc,
-      url: "http://solviainc.com/",
-    },
-    {
-      title: "Shinecleaning.it",
-      desc: "Website for a eco-friendly cleaning service company, based in Milan, Italy.",
-      image: shineCleaning,
-      url: "https://shinecleaning.it/",
+      url: "https://solviainc.com/",
     },
     {
       title: "Danualp.com",
@@ -113,6 +108,19 @@ export const projects = {
       image: motiveOps,
       url: "https://motiveops.com/",
     },
+    {
+      title: "Glitzfairry",
+      desc: "An E-commerce website for a online women's bag brand in Sri Lanka.",
+      image: glitzfairry,
+      url: "#",
+    },
+    {
+      title: "Shinecleaning.it",
+      desc: "Website for a eco-friendly cleaning service company, based in Milan, Italy.",
+      image: shineCleaning,
+      url: "https://sandbox-2.xcodelabs.online/",
+    },
+
     // {
     //   title: "Tonyremovals.com.au",
     //   desc: "Website for a leading removalist & storage company, based in Sydney, Australia.",
