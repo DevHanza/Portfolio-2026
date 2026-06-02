@@ -38,4 +38,38 @@ Not just ideas — real products in use."
       </div>
     </div>
   </section>
+  <div class="alert-bar">
+    <div class="container">
+      <div class="icon icon-circle-alert" aria-hidden="true"></div>
+      <p>
+        Some projects shown in here are now maintained by other developers, so
+        the current versions may differ slightly from the original work
+        displayed here.
+      </p>
+    </div>
+  </div>
 </Layout>
+
+<style>
+  .alert-bar {
+    /* background: rgba(0, 122, 255, 0.25); */
+    border-block: 1px solid var(--gray-1);
+    background:;
+    color: var(--gray-6);
+    padding: 1em 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+
+    .container {
+      display: flex;
+      gap: 1em;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .icon {
+      font-size: 1.125rem;
+      color: #007aff;
+    }
+  }
+</style>
