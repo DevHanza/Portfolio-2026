@@ -12,7 +12,7 @@ export const experience = [
     image: org,
   },
   {
-    position: "Web Developer",
+    position: "Web Developer Intern",
     workedAt: "Avlanche",
     type: "Full-time",
     date: "Mar 2025 - Oct 2025",
