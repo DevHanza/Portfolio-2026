@@ -1,6 +1,6 @@
-import placeholderImage from "../assets/ProjectThumbs/project-placeholder.png";
+// import placeholderImage from "../assets/ProjectThumbs/project-placeholder.png";
 import habitzy from "../assets/ProjectThumbs/Habitzy.png";
-import telegramYTDLBot from "../assets/ProjectThumbs/TelegramYTDLBot.png";
+// import telegramYTDLBot from "../assets/ProjectThumbs/TelegramYTDLBot.png";
 import cafesy from "../assets/ProjectThumbs/Cafesy.png";
 import schoolNotes from "../assets/ProjectThumbs/SchoolNotes.png";
 
@@ -23,27 +23,26 @@ export const projects = {
       url: "https://github.com/DevHanza/habitzy",
     },
     {
+      title: "Cafesy",
+      desc: "An online store for a coffee shop where you can buy products, contact, email newsletter, and more.",
+      stack: ["JavaScript", "Express.js", "Node.js", "HTML", "SCSS"],
+      image: cafesy,
+      url: "https://github.com/DevHanza/cafesy",
+    },
+    {
       title: "SchoolNotes",
       desc: "Note taking app that lets users manage their class/school notes in a simple digital interface.",
       stack: ["Angular", "Node.js", "MongoDB", "Express.js"],
       image: schoolNotes,
       url: "https://github.com/DevHanza/SchoolNotes",
     },
-
-    {
-      title: "Cafesy",
-      desc: "An online store for a coffee shop where you can buy products, contact, email newsletter, and more.",
-      stack: ["JavaScript", "Express.js", "Node.js", "SASS"],
-      image: cafesy,
-      url: "https://github.com/DevHanza/cafesy",
-    },
-    {
-      title: "TelegramYTDLBot",
-      desc: "A Telegram bot that lets users download YouTube videos directly through Telegram.",
-      stack: ["Python", "Docker"],
-      image: telegramYTDLBot,
-      url: "https://github.com/DevHanza/TelegramYTDLBot",
-    },
+    // {
+    // title: "TelegramYTDLBot",
+    // desc: "A Telegram bot that lets users download YouTube videos directly through Telegram.",
+    // stack: ["Python", "Docker"],
+    // image: telegramYTDLBot,
+    // url: "https://github.com/DevHanza/TelegramYTDLBot",
+    // },
     // {
     //   title: "ResponsiveShot",
     //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, minus.",
