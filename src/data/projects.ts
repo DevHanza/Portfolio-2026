@@ -3,6 +3,7 @@ import habitzy from "../assets/ProjectThumbs/Habitzy.png";
 // import telegramYTDLBot from "../assets/ProjectThumbs/TelegramYTDLBot.png";
 import cafesy from "../assets/ProjectThumbs/Cafesy.png";
 import schoolNotes from "../assets/ProjectThumbs/SchoolNotes.png";
+import nextjsWPBlog from "../assets/ProjectThumbs/NextjsWPBlog.png";
 
 import siterwell from "../assets/ProjectThumbs/Siterwell.png";
 import skippz from "../assets/ProjectThumbs/Skippz.png";
@@ -21,6 +22,13 @@ export const projects = {
       stack: ["React", "Node.js", "MongoDB", "Express.js", "Docker"],
       image: habitzy,
       url: "https://github.com/DevHanza/habitzy",
+    },
+    {
+      title: "Next.js WP Blog",
+      desc: "A modern tech blog website with headless WordPress focused on UI/UX.",
+      stack: ["Next.js", "TypeScript", "WordPress"],
+      image: nextjsWPBlog,
+      url: "https://github.com/DevHanza/nextjs-wordpress-blog",
     },
     {
       title: "Cafesy",
