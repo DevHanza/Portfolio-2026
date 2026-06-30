@@ -19,11 +19,11 @@ export const skills = [
     iconURL:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
   },
-  {
-    title: "Angular",
-    iconURL:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
-  },
+  // {
+  //   title: "Angular",
+  //   iconURL:
+  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
+  // },
   {
     title: "Node.js",
     iconURL:
@@ -64,39 +64,40 @@ export const skills = [
     iconURL:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
   },
-  {
-    title: "C Language",
-    iconURL:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
-  },
-  {
-    title: "Python",
-    iconURL:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-  },
-  {
-    title: "Docker",
-    iconURL:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-  },
+  // {
+  //   title: "C Language",
+  //   iconURL:
+  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
+  // },
   {
     title: "Git",
     iconURL:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
   },
   {
-    title: "Postman",
+    title: "Docker",
     iconURL:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
   },
+
+  {
+    title: "Python",
+    iconURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+  },
+  // {
+  //   title: "Postman",
+  //   iconURL:
+  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+  // },
   {
     title: "WordPress",
     iconURL:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg",
   },
-  {
-    title: "PHP",
-    iconURL:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
-  },
+  // {
+  //   title: "PHP",
+  //   iconURL:
+  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
+  // },
 ];
