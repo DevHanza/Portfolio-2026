@@ -18,7 +18,7 @@ export const projects = {
   personal: [
     {
       title: "Habitzy",
-      desc: "a simple habit tracking app that lets users see their progress over time.",
+      desc: "a habit-tracking platform that lets users track their habits with progress.",
       stack: ["React", "Node.js", "MongoDB", "Express.js", "Docker"],
       image: habitzy,
       url: "https://github.com/DevHanza/habitzy",
@@ -39,7 +39,7 @@ export const projects = {
     },
     {
       title: "SchoolNotes",
-      desc: "Note taking app that lets users manage their class/school notes in a simple digital interface.",
+      desc: "Note taking app that lets users manage their notes in a user-friendly interface.",
       stack: ["Angular", "Node.js", "MongoDB", "Express.js"],
       image: schoolNotes,
       url: "https://github.com/DevHanza/SchoolNotes",
