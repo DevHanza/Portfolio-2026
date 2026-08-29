@@ -28,12 +28,12 @@ export const education = [
   //   location: "Kandy, Sri Lanka",
   //   image: vta,
   // },
-  // {
-  //   position: "G.C.E Ordinary Level",
-  //   workedAt: "Sri Rahula College",
-  //   type: "Full-time",
-  //   date: "Jan 2010 - Jan 2021",
-  //   location: "Kandy, Sri Lanka",
-  //   image: srck,
-  // },
+  {
+    position: "G.C.E Ordinary Level",
+    workedAt: "Sri Rahula College",
+    type: "Full-time",
+    date: "Jan 2010 - Jan 2021",
+    location: "Kandy, Sri Lanka",
+    image: srck,
+  },
 ];
