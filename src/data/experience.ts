@@ -21,10 +21,10 @@ export const experience = [
   },
   {
     position: "Frontend Developer",
-    workedAt: "Fiverr Freelancer",
+    workedAt: "Fiverr",
     type: "Freelance",
-    date: "Jan 2024 - Mar 2025",
-    location: "Kandy, Sri Lanka",
+    date: "Oct 2024 - Nov 2024",
+    location: "Remote",
     image: fiverr,
   },
 ];
